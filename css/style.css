@@ -1,5 +1,11 @@
-body {
+.button.light {
+  display:none;
+}
+
+body,
+body.light {
   font-family: helvetica, sans-serif;
+  background-color: white;
   /* background-image: url("../img/redyarn.jpg"); */
 }
 
@@ -8,20 +14,44 @@ img {
   border: 10px solid black;
 }
 
-h1 {
+h1,
+h1.light {
   text-align: center;
+  color: #333;
 }
 
-h2 {
+h2,
+h2.light {
   color: #20209b;
 }
 
-li {
+li,
+li.light {
   line-height: 1.5em;
   font-size: 1.25em;
+  color: #333;
 }
 
-a {
+a,
+a.light {
   text-decoration: none;
   color: #2de0fc;
+}
+
+/* Dark mode styles h1 h2 h3 p ul ol li*/
+body.dark {
+  background-color: black;
+}
+
+h1.dark,
+h2.dark,
+h3.dark,
+p.dark,
+li.dark {
+  color: white;
+}
+
+a.dark {
+  text-decoration: none;
+  color: green;
 }
